@@ -48,6 +48,11 @@ img{
     position: fixed;
     top: 0px;
     padding: 0 30px;
+    transition:0.5s;
+}
+.navbar.top {
+    background:transparent;
+
 }
 
 .navbar a {
@@ -110,6 +115,10 @@ img{
 .hero * {
     z-index: 10;
 }
+.hero.blog {
+    background: url('/image_resources/home/blog.jpg') no-repeat center center/cover;
+    height: 30vh;
+}
 /* icons */
 
 .icons {
@@ -169,9 +178,38 @@ img{
 .callback-form .btn {
     padding: 12px 0;
     margin-top: 20px;
-    width: 40%;
+
+}
+/* post */
+
+post {
+    padding: 50px 30px;
+
+}
+post h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #ccc solid 1px;
+
 }
 
+post .meta {
+    margin-bottom: 30px;
+
+}
+post img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+
+
+
+
+/* footer */
 .footer {
     display: flex;
     flex-direction: column;
@@ -206,5 +244,30 @@ margin-right: 30px;
     }
     .flex-items {
         flex-direction: column;
+  
     }
+
+.flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
 }
+.team img {
+    width : 70%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
