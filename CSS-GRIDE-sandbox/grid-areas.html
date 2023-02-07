@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-areas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+            'header header header'
+            'content content sidebar'
+            'box-1    box-2   box-2'
+            'footer   footer   footer'
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header"><h1>My Website</h1></header>
+    <section class="content">
+        <h3>Welcome To My Site</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas voluptatum delectus odio totam temporibus nihil aspernatur non libero, magni ab modi quos quasi illo harum! Consectetur, alias? Provident, beatae eveniet! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam corrupti necessitatibus quia. Voluptatum ipsam earum iste. Optio, doloribus libero tenetur minima, porro mollitia enim culpa laborum, repellendus neque possimus.
+        </p>
+    </section>
+    <aside class="sidebar">
+        <h3>Contact Us</h3>
+        <ul>
+            <li>Some Company</li>
+            <li>50 main st,Boston MA</li>
+            <li>something@something.com</li>
+            <li>555-555-5555</li>
+        </ul>
+    </aside>
+        <div class="box-1">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis officia ex, a eveniet perspiciatis iste enim, saepe possimus vitae expedita minima nulla aliquid similique! Atque iure facilis tempora autem vero?</p>
+ </div>
+ <div class="box-2">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis officia ex, a eveniet perspiciatis iste enim, saepe possimus vitae expedita minima nulla aliquid similique! Atque iure facilis tempora autem vero?</p>
+ </div>
+ <div class="box-3">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis officia ex, a eveniet perspiciatis iste enim, saepe possimus vitae expedita minima nulla aliquid similique! Atque iure facilis tempora autem vero?</p>
+ </div>
+ <footer class="footer"><p>Copyright &copy;
+    2019</p>
+</footer>
+   
+</body>
+</html>

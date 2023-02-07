@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3f51b5;
+    }
+
+    /* AppBar Styles */
+    .app-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      background-color: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    .app-bar-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 16px;
+    }
+
+    .app-bar-menu {
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+    }
+
+    .app-bar-menu-item {
+      margin-right: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #3f51b5;
+    }
+
+    .app-bar-menu-item i {
+      font-size: 18px;
+      margin-right: 8px;
+    }
+
+    /* Content Styles */
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 64px);
+    }
+
+    .content-title {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .content-text {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .dashboard {
+      display: none;
+    }
+
+    .open .dashboard {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- AppBar -->
+  <div class="app-bar">
+    <div class="app-bar-title">My Website</div>
+    <div class="app-bar-menu">
+      <!-- Dashboard content here -->
+    </div>
+    <script>
+      const toggleButton = document.getElementById("toggle-dashboard");
+      const dashboard = document.querySelector(".dashboard");
+      toggleButton.addEventListener("click", function () {
+        dashboard.classList.toggle("open");
+      });
+    </script>
+
+    <body>
+      <a href="#">
+        <i class="material-icons">dashboard</i>
+        Dashboard
+      </a>
+      <a href="#">
+        <i class="material-icons">shopping_cart</i>
+        Orders
+      </a>
+      <a href="#">
+        <i class="material-icons">people</i>
+        Customers
+      </a>
+      <a href="#">
+        <i class="material-icons">assessment</i>
+        Reports
+      </a>
+      <a class="nav-item" href="#">
+        <i class="material-icons">settings_ethernet</i>
+        Integrations
+      </a>
+
+    </body>
+
+</html>
