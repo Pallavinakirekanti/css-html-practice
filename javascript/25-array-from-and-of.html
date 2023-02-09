@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="people">
+    <p>wes</p>
+    <p>kait</p>
+    <p>snickers</p>
+</div>
+<body>
+    <script>
+        const people=document.querySelectorAll('.people');
+        const peopleArray=Array.from(people, person=>{
+       console.log(person);
+       return person.textContent;
+    });
+    console.log(people.Array);
+        //const names=people.map(person=>person.textcontent);
+   function sumAll(){
+    const nums=Arrays.from(arguments);
+    return nums.reduce(prev,next=>prev+next,0);
+   }
+   sunAll(2,34,23,234,234,56,78,777);
+   const ages=Array.of(12,4,23,62,34);
+   </script>
+    
+</body>
+</html>
