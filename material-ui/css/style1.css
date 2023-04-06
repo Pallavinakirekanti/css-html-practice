@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-details {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.sidebar .logo-details i {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center;
+}
+.sidebar .logo-details .logo_name {
+  color: #ccc;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sidebar .nav-links {
+  margin-top: 10px;
+}
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 50px;
+}
+.sidebar .nav-links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li a.active {
+  background: whitesmoke;
+}
+.sidebar .nav-links li a:hover {
+  background: #ccc;
+}
+.sidebar .nav-links li i {
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+.sidebar .nav-links li a .links_name {
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.home-section {
+  position: relative;
+  background: whitesmoke;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.home-section nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: steelblue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.sidebar.active ~ .home-section {
+  width: calc(100% - 220px);
+  overflow: hidden;
+  left: 220px;
+}
+.home-section nav {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+.sidebar.active ~ .home-section nav {
+  width: calc(100% - 220px);
+  left: 220px;
+}
+
+.box1 {
+  width: 65%;
+  /* padding: 20px; */
+  background-color: white;
+  border: 1px solid whitesmoke;
+  /* text-align: center; */
+  flex-direction: column;
+  /* justify-content: space-between; */
+  position: absolute;
+  bottom: 290px;
+  left: 2%;
+  height: 250px;
+  overflow: hidden;
+}
+.box2 {
+  width: 24%;
+  /* padding: 20px; */
+  background-color: white;
+  border: 1px solid whitesmoke;
+  text-align: center;
+  position: fixed;
+  bottom: 290px;
+  left: 74%;
+  height: 250px;
+
+  /* justify-content: space-around; */
+}
+/* h2 */
+h2 {
+  color: blue;
+}
+h1 {
+  margin-top: 20px;
+}
+p {
+  /* margin-top: 25px; */
+}
+.link {
+  color: blue;
+  margin-top: 25px;
+}
+.box3 {
+  width: 96%;
+  height: 290px;
+  background-color: white;
+  left: 2%;
+  position: absolute;
+  top: 60%;
+}
+#myChart {
+  width: 400px;
+  height: 200px;
+}
+/* icon */
+/* Tablew */
+table {
+  /* border-collapse: collapse; */
+  width: 100%;
+  color: #333;
+}
+
+td,
+th {
+  padding: 8px;
+  text-align: left;
+}
+
+/* adding grph */
+/* #graph-container {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+  }
+  
+  .bar {
+    width: 30px;
+    margin: 0 10px;
+    background-color: blue;
+  } */
+
+
+
+
+  /* Default styles */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightgray;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+}
+
+
+
+
